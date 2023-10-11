@@ -38,14 +38,36 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es 1960</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
                     </div>
-                    <div class="tab-contents"></div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UA/UX</span><br />Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br />Web App Development</li>
+                            <li><span>App Development</span><br />Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br />Designing Web/App interfaces</li>
+                            <li><span>2020 - 2022</span><br />Web App Development</li>
+                            <li><span>2018 - 2020</span><br />Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br />Designing Web/App interfaces</li>
+                            <li><span>2019</span><br />Web App Development</li>
+                            <li><span>2023</span><br />Building Android apps</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
